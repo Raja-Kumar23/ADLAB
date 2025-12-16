@@ -1,0 +1,9 @@
+id,name,age,score,city,department,salary,weight_kg,height_m,color
+1,Arjun,22,55,Delhi,IT,40000,70,1.75,Red
+2,Riya,25,48,Mumbai,HR,45000,60,1.65,Blue
+3,Aman,19,72,Delhi,IT,50000,80,1.80,Green
+4,Neha,30,65,Pune,Finance,52000,68,1.70,Blue
+5,Kabir,28,59,Delhi,HR,47000,75,1.78,Red
+6,Simran,,80,Mumbai,IT,61000,62,1.60,Green
+7,Ravi,24,,Pune,Finance,58000,82,1.85,Red
+8,Anjali,26,91,Delhi,HR,,70,1.68,Blue
