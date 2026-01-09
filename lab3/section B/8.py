@@ -1,14 +1,14 @@
 # 8. Group rows by a categorical variable and compute aggregate statistics.
-
 import pandas as pd
-df = pd.read_csv("data.csv")
-grouped = df.groupby("city").agg({  
-    "age": "mean",
-    "score": "sum"
-})
-print("Grouped statistics by city:")
+data = {
+    "Category": ["A", "B", "A", "B", "A"],
+    "Values": [10, 20, 15, 25, 10]
+}
+df = pd.DataFrame(data)
+grouped = df.groupby("Category").agg({"Values": ["mean", "sum", "max"]})
 print(grouped)
 print("Name: Raja Kumar")
 print("Roll: 23053769")
+
         
 

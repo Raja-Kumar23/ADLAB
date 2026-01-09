@@ -1,11 +1,8 @@
 # Q6. Boxplot for monthly expenses
-from curses.ascii import alt
-
-
-expenses = [1000, 1200, 1500, 2000, 2500]
-
-alt.boxplot(expenses)
-alt.show()
-
+from matplotlib import pyplot as plt
+monthly_expenses = [250, 300, 280, 320, 310,
+                    290, 270, 330, 340, 260]
+plt.boxplot(monthly_expenses)
+plt.show()
 print("Name: Raja Kumar")
 print("Roll: 23053769")

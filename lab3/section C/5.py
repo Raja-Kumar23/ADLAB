@@ -1,11 +1,9 @@
 # Q5. Heatmap for correlation matrix
 from matplotlib import pyplot as plt
-import seaborn as sns
 import numpy as np
-
-data = pd.DataFrame(np.random.rand(5, 5))
-sns.heatmap(data.corr(), annot=True)
+data = np.random.rand(10, 10)
+plt.imshow(data, cmap='hot', interpolation='nearest')
+plt.colorbar()
 plt.show()
-
 print("Name: Raja Kumar")
 print("Roll: 23053769")

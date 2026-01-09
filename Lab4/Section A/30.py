@@ -1,0 +1,21 @@
+import numpy as np
+from sklearn.linear_model import Ridge, Lasso
+from sklearn.metrics import mean_squared_error
+np.random.seed(0)
+X1 = np.random.rand(20)
+X2 = X1 + 0.01*np.random.rand(20) 
+X = np.column_stack((X1, X2))
+y = 3*X1 + 3*X2 + np.random.randn(20)
+ridge = Ridge(alpha=1)
+ridge.fit(X, y)
+ridge_pred = ridge.predict(X)
+ridge_mse = mean_squared_error(y, ridge_pred)
+lasso = Lasso(alpha=0.5)
+lasso.fit(X, y)
+lasso_pred = lasso.predict(X)
+lasso_mse = mean_squared_error(y, lasso_pred)
+print("Ridge coefficients:", ridge.coef_)
+print("LASSO coefficients:", lasso.coef_)
+print("Ridge MSE:", ridge_mse)
+print("LASSO MSE:", lasso_mse)
+print("Raja Kumar Sah, 23053769")
