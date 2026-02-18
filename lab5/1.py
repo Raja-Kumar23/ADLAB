@@ -7,7 +7,7 @@ X = np.array([1, 2, 3, 4])
 y = np.array([0, 0, 1, 1])
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
-w = 0
+w = 0   
 b = 0
 lr = 0.1
 for i in range(500):

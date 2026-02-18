@@ -13,7 +13,7 @@ X, y = make_classification(
     n_clusters_per_class=1,
     random_state=1
 )
-model = LogisticRegression()  #create logistic regression model
+model = LogisticRegression() 
 model.fit(X, y)
 print("Coefficient:", model.coef_)
 print("Intercept:", model.intercept_)
